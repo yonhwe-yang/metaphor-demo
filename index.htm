@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Metaphor Analysis Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Metaphor Analysis System</h1>
+    <p class="subtitle">Dual-LLM Metaphor Detection Demo</p>
+
+    <textarea
+      id="inputText"
+      placeholder="ここに日本語テキストを入力..."
+    ></textarea>
+
+    <button id="analyzeBtn">Analyze</button>
+
+    <div id="loading" class="loading hidden">
+      分析中...
+    </div>
+
+    <div class="card">
+      <h2>Qwen 初判</h2>
+      <pre id="qwenResult">等待输入...</pre>
+    </div>
+
+    <div class="card">
+      <h2>Gemini 最终判断</h2>
+      <pre id="geminiResult">等待输入...</pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
