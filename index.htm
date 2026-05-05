@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Metaphor Analysis Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Metaphor Analysis System</h1>
+
+    <textarea
+      id="inputText"
+      placeholder="ここに日本語テキストを入力..."
+    ></textarea>
+
+    <button id="analyzeBtn">Analyze</button>
+
+    <div id="loading" class="loading hidden">
+      分析中...
+    </div>
+
+    <div class="card">
+      <h2>Preliminary Analysis</h2>
+      <pre id="qwenResult">loading...</pre>
+    </div>
+
+    <div class="card">
+      <h2>Final Analysis</h2>
+      <pre id="geminiResult">loading...</pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
