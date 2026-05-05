@@ -120,7 +120,7 @@ btn.onclick = async ()=>{
 
   loading.classList.remove("hidden");
   qwenResult.textContent = "分析中...";
-  geminiResult.textContent = "等待Qwen...";
+  geminiResult.textContent = "loading...";
 
   try{
     const qwen = await callQwen(text);
